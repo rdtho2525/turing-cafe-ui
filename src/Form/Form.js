@@ -36,30 +36,35 @@ class Form extends Component {
     return (
       <form>
         <input
-        type="text"
-        name="name"
-        placeholder="Name"
-        onChange={event => this.handleChange(event)}/>
+          type="text"
+          name="name"
+          placeholder="Name"
+          onChange={event => this.handleChange(event)}
+        />
         <input
-        type="text"
-        name="date"
-        placeholder="Date (mm/dd)"
-        onChange={event => this.handleChange(event)}/>
+          type="text"
+          name="date"
+          placeholder="Date (mm/dd)"
+          onChange={event => this.handleChange(event)}
+        />
         <input
-        type="text"
-        name="time"
-        placeholder="Time (hh:mm)"
-        onChange={event => this.handleChange(event)}/>
+          type="text"
+          name="time"
+          placeholder="Time (hh:mm)"
+          onChange={event => this.handleChange(event)}
+        />
         <input
-        type="text"
-        name="numOfGuests"
-        placeholder="Number of Guests"
-        onChange={event => this.handleChange(event)}/>
+          type="text"
+          name="numOfGuests"
+          placeholder="Number of Guests"
+          onChange={event => this.handleChange(event)}
+        />
         <input
-        type="submit"
-        value="Make Reservation"
-        className="submit-button"
-        onClick={event => this.makeReservation(event)}/>
+          type="submit"
+          value="Make Reservation"
+          className="submit-button"
+          onClick={event => this.makeReservation(event)}
+        />
       </form>
     )
   }

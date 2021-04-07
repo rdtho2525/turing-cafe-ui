@@ -3,11 +3,9 @@ form {
 }
 
 input {
-  /* height: 2em; */
   width: 15%;
   margin: 10px;
   font-size: 1.25em;
-  /* padding-left: 2px; */
 }
 
 .submit-button {

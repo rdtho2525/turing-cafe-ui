@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
-/* * {
-  border: 1px solid red;
-} */
-
 .App {
   display: flex;
   flex-direction: column;
