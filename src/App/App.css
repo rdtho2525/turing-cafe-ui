@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
+/* * {
+  border: 1px solid red;
+} */
+
 .App {
   display: flex;
   flex-direction: column;
@@ -16,4 +20,10 @@
   color: teal;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
+}
+
+.resy-container {
+  height: 100%;
+  width: 98%;
+  display: flex;
 }
