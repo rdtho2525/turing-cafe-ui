@@ -20,8 +20,17 @@ class Form extends Component {
     event.preventDefault();
     const newReservation = {...this.state, id: Date.now()}
     this.props.addReservation(newReservation);
+    this.clearValues();
   }
- 
+
+  clearValues = () => {
+    this.setState({
+      name: '',
+      date: '',
+      time: '',
+      numOfGuests: 0
+    });
+  }
 
   render() {
     return (
@@ -39,7 +48,7 @@ class Form extends Component {
         <input
         type="text"
         name="time"
-        placeholder="Time"
+        placeholder="Time (hh:mm)"
         onChange={event => this.handleChange(event)}/>
         <input
         type="text"
