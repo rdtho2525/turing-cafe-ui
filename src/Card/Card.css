@@ -1,0 +1,13 @@
+.card {
+  height: 30vh;
+  width: 17vw;
+  margin: 10px 15px;
+  border: 4px solid teal;
+  background-color: seashell;
+  color: teal;
+  font-size: 1.5rem;
+}
+
+.name {
+  font-weight: bold;
+}
