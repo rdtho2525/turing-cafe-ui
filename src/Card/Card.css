@@ -11,3 +11,19 @@
 .name {
   font-weight: bold;
 }
+
+button {
+  height: 2em;
+  width: 80%;
+  background-color: teal;
+  color: seashell;
+  border: 1px solid seashell;
+  font-size: 1.25rem;
+}
+
+button:hover {
+  background-color: seashell;
+  color: teal;
+  border-color: teal;
+  cursor: pointer;
+}
