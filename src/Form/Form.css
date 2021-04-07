@@ -1,0 +1,23 @@
+form {
+  width: 95%;
+}
+
+input {
+  /* height: 2em; */
+  width: 15%;
+  margin: 10px;
+  font-size: 1.25em;
+  /* padding-left: 2px; */
+}
+
+.submit-button {
+  background-color: teal;
+  color: seashell;
+  border: 1px solid seashell;
+}
+
+.submit-button:hover {
+  background-color: seashell;
+  color: teal;
+  cursor: pointer;
+}
