@@ -17,14 +17,13 @@ describe('Turing Cafe', () => {
     cy.get('input[name=numOfGuests]').type(13)
   });
 
-  it.only('should add a new card to the dashboard when a reservation form is submitted', () => {
+  it('should add a new card to the dashboard when a reservation form is submitted', () => {
     cy.get('input[name=name]').type('Yoda')
     cy.get('input[name=time]').type('3:30')
     cy.get('input[name=date]').type('4/1')
     cy.get('input[name=numOfGuests]').type(13)
     cy.get('input[class=submit-button]').click()
-
     cy.get('p[id="Yoda"]').should('be.visible')
   });
 
-})
+});
