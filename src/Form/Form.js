@@ -12,21 +12,34 @@ class Form extends Component {
     }
   }
 
+  handleChange = (event) => {
+    this.setState({ [event.target.name]: event.target.value});
+  }
+ 
+
   render() {
     return (
       <form>
         <input
         type="text"
-        placeholder="Name"/>
+        name="name"
+        placeholder="Name"
+        onChange={event => this.handleChange(event)}/>
         <input
         type="text"
-        placeholder="Date (mm/dd)"/>
+        name="date"
+        placeholder="Date (mm/dd)"
+        onChange={event => this.handleChange(event)}/>
         <input
         type="text"
-        placeholder="Time"/>
+        name="time"
+        placeholder="Time"
+        onChange={event => this.handleChange(event)}/>
         <input
         type="text"
-        placeholder="Number of Guests"/>
+        name="numOfGuests"
+        placeholder="Number of Guests"
+        onChange={event => this.handleChange(event)}/>
         <input
         type="submit"
         value="Make Reservation"
