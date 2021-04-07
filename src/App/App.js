@@ -42,15 +42,30 @@ class App extends Component {
     .catch(error => console.log(error));
   }
 
+  deleteReservation = (id) => {
+    fetch(`http://localhost:3001/api/v1/reservations/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-type': 'application/json'
+      }
+    })
+      .then(response => response.json())
+      .catch(error => console.log(error));
+
+    const filterRes = this.state.allReservations.filter(reservation => reservation.id !== id)
+    this.setState({ allReservations: filterRes});
+
+  }
+
   render() {
     return (
       <div className="App">
         <h1 className='app-title'>Turing Cafe Reservations</h1>
         <div className='resy-form'>
-          <Form addReservation={this.addReservation}/>
+          <Form addReservation={this.addReservation} />
         </div>
         <div className='resy-container'>
-          <Reservations allReservations={this.state.allReservations}/>
+          <Reservations allReservations={this.state.allReservations} deleteReservation={this.deleteReservation}/>
         </div>
       </div>
     )
