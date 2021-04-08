@@ -19,7 +19,7 @@
 }
 
 .resy-container {
-  height: 100%;
+  height: 80vh;
   width: 98%;
   display: flex;
 }
